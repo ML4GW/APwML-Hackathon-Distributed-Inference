@@ -1,3 +1,67 @@
+import argparse
+import sys
+
+def create_arg_parser():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "-m",
+        "--model",
+        required=True,
+        help="path to model",
+    )
+
+    parser.add_argument(
+        "-d",
+        "--data",
+        required=True,
+        help="path to data",
+    )
+
+    parser.add_argument(
+        "-b",
+        "--batch_size",
+        required=True,
+        help="batch size",
+    )
+
+    parser.add_argument(
+        "-s",
+        "--submit_dir",
+        default=None,
+        help="submit directory",
+    )
+
+    parser.add_argument(
+        "-l",
+        "--log_dir",
+        default=None,
+        help="log directory",
+    )
+
+    parser.add_argument(
+        "-o",
+        "--output_dir",
+        default=None,
+        help="output directory",
+    )
+
+    parser.add_argument(
+        "-e",
+        "--error_dir",
+        default=None,
+        help="error directory",
+    )
+
+    return parser
+
+parser = create_arg_parser()
+
+args = parser.parse_args(sys.argv[1:])
+
+print(args)
+print(args.model)
+
 # let's deny TensorFlow any GPUs up front so that it doesn't
 # take up all of our available GPU memory. We don't need GPUs
 # for export anyway, so it shouldn't affect anything
