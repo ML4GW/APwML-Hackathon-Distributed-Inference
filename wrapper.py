@@ -214,15 +214,13 @@ def main(**args):
 
     
     #condor sumbit files to open servers ...
-    for s in numer_of_servers:
+    for s in [1]:# in numer_of_servers:
         submit_job = os.popen("python run-triton-server.py",'r')
 
-    wait 120
-
+    time.sleep(120)
 
     for job_id in job_ids:
-        is_server_ready(job_id)
-
+        is_server_ready
     trials =  0
     while condor job is not running)
 
