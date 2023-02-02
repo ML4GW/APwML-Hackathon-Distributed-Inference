@@ -1,0 +1,20 @@
+universe = vanilla
+accounting_group = ligo.dev.o4.detchar.subtraction.deepclean
+executable = /opt/tritonserver/bin/tritonserver
+arguments = "-h"
+# arguments = --model-repository /home/vasileios.skliris/.testhermes
+
++SingularityImage = '/cvmfs/singularity.opensciencegrid.org/ml4gw/hermes/tritonserver:22.12'
+Requirements = HasSingularity
+# && (CUDADeviceName == "NVIDIA A30")
+transfer_executable = False
+
+request_GPUs = 1
+request_cpus = 8
+request_disk = 1024
+
+log = condor/log/run-tritonserver_20230201_01.log
+output = condor/output/run-tritonserver_20230201_01.output
+error = condor/error/run-tritonserver_20230201_01.error
+
+queue

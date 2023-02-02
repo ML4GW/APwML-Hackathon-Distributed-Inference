@@ -1,0 +1,83 @@
+000 (38822632.000.000) 2023-02-01 14:06:19 Job submitted from host: <10.14.0.73:9618?addrs=10.14.0.73-9618&alias=ldas-pcdev13.ligo.caltech.edu&noUDP&sock=schedd_4493_671b>
+...
+001 (38822632.000.000) 2023-02-01 14:08:51 Job executing on host: <10.14.3.5:9618?addrs=10.14.3.5-9618&alias=node505.cluster.ldas.cit&noUDP&sock=startd_3631_2478>
+...
+006 (38822632.000.000) 2023-02-01 14:08:55 Image size of job updated: 1252116
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (38822632.000.000) 2023-02-01 14:08:55 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 8         8 
+	   Disk (KB)            :        0     1024     93481 
+	   Gpus (Average)       :                 1         1 "GPU-b6a6528a"
+	   Memory (MB)          :        0     2048      2048 
+
+	Job terminated of its own accord at 2023-02-01T22:08:55Z.
+...
+000 (38822633.000.000) 2023-02-01 14:09:58 Job submitted from host: <10.14.0.73:9618?addrs=10.14.0.73-9618&alias=ldas-pcdev13.ligo.caltech.edu&noUDP&sock=schedd_4493_671b>
+...
+001 (38822633.000.000) 2023-02-01 14:11:19 Job executing on host: <10.14.2.85:9618?addrs=10.14.2.85-9618&alias=node335.cluster.ldas.cit&noUDP&sock=startd_841902_52f6>
+...
+006 (38822633.000.000) 2023-02-01 14:11:25 Image size of job updated: 8224
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (38822633.000.000) 2023-02-01 14:11:25 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 8         8 
+	   Disk (KB)            :        0     1024    102280 
+	   Gpus (Average)       :                 1         1 "GPU-a4312dfd"
+	   Memory (MB)          :        0     2048      2048 
+
+	Job terminated of its own accord at 2023-02-01T22:11:25Z.
+...
+000 (38822634.000.000) 2023-02-01 14:13:48 Job submitted from host: <10.14.0.73:9618?addrs=10.14.0.73-9618&alias=ldas-pcdev13.ligo.caltech.edu&noUDP&sock=schedd_4493_671b>
+...
+001 (38822634.000.000) 2023-02-01 14:14:08 Job executing on host: <10.14.3.5:9618?addrs=10.14.3.5-9618&alias=node505.cluster.ldas.cit&noUDP&sock=startd_3631_2478>
+...
+006 (38822634.000.000) 2023-02-01 14:14:13 Image size of job updated: 9144
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+005 (38822634.000.000) 2023-02-01 14:14:13 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 8         8 
+	   Disk (KB)            :        0     1024     93481 
+	   Gpus (Average)       :                 1         1 "GPU-4822cac6"
+	   Memory (MB)          :        0     2048      2048 
+
+	Job terminated of its own accord at 2023-02-01T22:14:13Z.
+...
+000 (38822635.000.000) 2023-02-01 14:16:09 Job submitted from host: <10.14.0.73:9618?addrs=10.14.0.73-9618&alias=ldas-pcdev13.ligo.caltech.edu&noUDP&sock=schedd_4493_671b>
+...
+009 (38822635.000.000) 2023-02-01 14:16:20 Job was aborted.
+	via condor_rm (by user chiajui.chou)
+...

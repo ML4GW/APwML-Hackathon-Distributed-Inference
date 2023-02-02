@@ -31,7 +31,7 @@ job = Job(name="run-tritonserver",
                       "+SingularityImage = \"/cvmfs/singularity.opensciencegrid.org/ml4gw/hermes/tritonserver:22.12\""]
           )
 
-job.add_arg("--model-repository /home/vasileios.skliris/testhermes")
+job.add_arg("--model-repository /home/vasileios.skliris/.testhermes")
 # hot to get condor_id
 # var=$(echo -e $(python run-tritonserver.py) | grep "submitted" | awk '{pint $8}' | tr -d '.')
 job.build_submit()

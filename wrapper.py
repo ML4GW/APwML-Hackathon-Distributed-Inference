@@ -156,30 +156,6 @@ def main(**args):
     kernels_per_second = INFERENCE_RATE * INFERENCE_SAMPLING_RATE
     batches_per_second = kernels_per_second / batch_size
 
-    # now load in our existing neural networks
-    model1 = load_model('/home/vasileios.skliris/ml-validation/HLV_NET/Run_13/elevatedVirgo/model1_32V_No5.h5')
-
-    # let's make sure we're starting with a fresh repo
-    repo_path = str(Path.home() / "testhermes")
-    try:
-        shutil.rmtree(repo_path)
-    except FileNotFoundError:
-        pass
-    repo = qv.ModelRepository(repo_path)
-
-    # # make a dummy model that we'll use to pass the strain
-
-    model = repo.add("my_model", platform=qv.Platform.ENSEMBLE) #ENSEMBLE MIGHT NEED TO CHANGE
-
-
-    model.export_version(
-        model1,
-        input_shapes = {"input_type": model.input_shape} 
-        output_names = ["output"])
-
-        #input_shapes={"hoft": (-1, NUM_IFOS, kernel_size)},
-        #output_names=["prob"]
-
     class Callback:
         def __init__(self, num_inferences, batch_size):
             self.batch_size = batch_size

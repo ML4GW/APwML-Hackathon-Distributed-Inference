@@ -1,0 +1,19 @@
+universe = vanilla
+accounting_group = ligo.dev.o4.detchar.subtraction.deepclean
+executable = /opt/tritonserver/bin/tritonserver
+arguments = "-h"
+
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/ml4gw/hermes/tritonserver:22.12"
+Requirements = HasSingularity
+# && (CUDADeviceName == "NVIDIA A30")
+transfer_executable = False
+
+request_GPUs = 1
+request_cpus = 8
+request_disk = 1024
+
+output = triton.out
+error = triton.err
+log = triton.log
+
+queue
