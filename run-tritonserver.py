@@ -26,7 +26,7 @@ def fancyname(directory):
 def main (model_repo = "/home/mly/O3-replay/.testhermes"
          , condor_path="./"
          , name = "run-tritonserver"
-         , number_of_servers=4):
+         , number_of_servers=1):
 
         
     fancy_name = fancyname(condor_path)
@@ -72,7 +72,9 @@ def main (model_repo = "/home/mly/O3-replay/.testhermes"
             time.sleep(1)
             ip = subprocess.check_output(expression , shell=True )
         
+        print(str(ip)[2:-3])
         ip = str(ip)[3:-3]
+
         print(ip)
         ip_list.append(ip)
 
