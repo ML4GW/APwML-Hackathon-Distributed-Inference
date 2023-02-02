@@ -1,0 +1,16 @@
+name: "input-model"
+platform: "tensorflow_savedmodel"
+input {
+  name: "strain"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 1024
+  dims: 3
+}
+output {
+  name: "tf.identity"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 1024
+  dims: 3
+}

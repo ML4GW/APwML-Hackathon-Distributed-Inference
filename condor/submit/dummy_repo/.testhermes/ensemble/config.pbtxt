@@ -1,0 +1,80 @@
+name: "ensemble"
+platform: "ensemble"
+input {
+  name: "strain"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 1024
+  dims: 3
+}
+input {
+  name: "correlation"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 60
+  dims: 3
+}
+output {
+  name: "tf.math.multiply"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 2
+}
+ensemble_scheduling {
+  step {
+    model_name: "input-model"
+    model_version: -1
+    input_map {
+      key: "strain"
+      value: "strain"
+    }
+    output_map {
+      key: "tf.identity"
+      value: "tf.identity"
+    }
+  }
+  step {
+    model_name: "model2"
+    model_version: -1
+    input_map {
+      key: "correlation"
+      value: "correlation"
+    }
+    input_map {
+      key: "strain"
+      value: "tf.identity"
+    }
+    output_map {
+      key: "main_output"
+      value: "model2_output"
+    }
+  }
+  step {
+    model_name: "model1"
+    model_version: -1
+    input_map {
+      key: "strain"
+      value: "tf.identity"
+    }
+    output_map {
+      key: "main_output"
+      value: "model1_output"
+    }
+  }
+  step {
+    model_name: "output-model"
+    model_version: -1
+    input_map {
+      key: "output1"
+      value: "model1_output"
+    }
+    input_map {
+      key: "output2"
+      value: "model2_output"
+    }
+    output_map {
+      key: "tf.math.multiply"
+      value: "tf.math.multiply"
+    }
+  }
+}

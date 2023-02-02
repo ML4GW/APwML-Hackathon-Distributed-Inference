@@ -1,0 +1,20 @@
+name: "output-model"
+platform: "tensorflow_savedmodel"
+input {
+  name: "output1"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 2
+}
+input {
+  name: "output2"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 2
+}
+output {
+  name: "tf.math.multiply"
+  data_type: TYPE_FP32
+  dims: -1
+  dims: 2
+}
