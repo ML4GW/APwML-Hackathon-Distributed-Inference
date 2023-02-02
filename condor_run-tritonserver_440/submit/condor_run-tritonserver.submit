@@ -1,0 +1,14 @@
+executable = /opt/tritonserver/bin/tritonserver
+requirements = HasSingularity && (CUDACapability >= 6.0)
+log = ./condor_run-tritonserver_440/log/condor_run-tritonserver.log
+output = ./condor_run-tritonserver_440/output/condor_run-tritonserver.output
+error = ./condor_run-tritonserver_440/error/condor_run-tritonserver.error
+accounting_group_user=vasileios.skliris
+accounting_group=ligo.dev.o4.burst.allsky.mlyonline
+request_disk=64M
+request_GPUs = 1
+request_cpus = 8
+transfer_executable = False
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/ml4gw/hermes/tritonserver:22.12"
+arguments = --model-repository /home/mly/O3-replay/.testhermes
+queue

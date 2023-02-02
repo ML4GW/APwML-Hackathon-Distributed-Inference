@@ -1,0 +1,27 @@
+000 (112012903.000.000) 2023-02-02 08:46:59 Job submitted from host: <10.14.0.160:9618?addrs=10.14.0.160-9618&alias=ldas-pcdev2.ligo.caltech.edu&noUDP&sock=schedd_4741_8298>
+...
+001 (112012903.000.000) 2023-02-02 08:50:12 Job executing on host: <10.14.1.167:9618?addrs=10.14.1.167-9618&alias=node167.cluster.ldas.cit&noUDP&sock=startd_2111_8c84>
+...
+006 (112012903.000.000) 2023-02-02 08:50:22 Image size of job updated: 429556
+	60  -  MemoryUsage of job (MB)
+	61424  -  ResidentSetSize of job (KB)
+...
+006 (112012903.000.000) 2023-02-02 08:52:02 Image size of job updated: 17403620
+	60  -  MemoryUsage of job (MB)
+	61424  -  ResidentSetSize of job (KB)
+...
+004 (112012903.000.000) 2023-02-02 08:52:02 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:05, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :                 8         8 
+	   Disk (KB)            :        0    65536    204634 
+	   Gpus (Average)       :                 1         1 "GPU-ed25576f"
+	   Memory (MB)          :       60     2048      2048 
+...
+009 (112012903.000.000) 2023-02-02 08:52:02 Job was aborted.
+	via condor_rm (by user vasileios.skliris)
+...

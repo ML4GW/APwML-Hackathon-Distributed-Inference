@@ -1,0 +1,178 @@
+WARNING: underlay of /etc/condor required more than 50 (105) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (500) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: 460.32.03
+I0202 16:48:38.901515 1110257 pinned_memory_manager.cc:240] Pinned memory pool is created at '0x2b7752000000' with size 268435456
+I0202 16:48:38.902534 1110257 cuda_memory_manager.cc:105] CUDA memory pool is created on device 0 with size 67108864
+I0202 16:48:38.954019 1110257 model_lifecycle.cc:459] loading: model1:1
+I0202 16:48:38.954210 1110257 model_lifecycle.cc:459] loading: model2:1
+I0202 16:48:38.954389 1110257 model_lifecycle.cc:459] loading: output-model:1
+I0202 16:48:38.954588 1110257 model_lifecycle.cc:459] loading: input-model:1
+I0202 16:48:43.699204 1110257 tensorflow.cc:2536] TRITONBACKEND_Initialize: tensorflow
+I0202 16:48:43.699534 1110257 tensorflow.cc:2546] Triton TRITONBACKEND API version: 1.10
+I0202 16:48:43.699561 1110257 tensorflow.cc:2552] 'tensorflow' TRITONBACKEND API version: 1.10
+I0202 16:48:43.699572 1110257 tensorflow.cc:2576] backend configuration:
+{"cmdline":{"auto-complete-config":"true","min-compute-capability":"6.000000","backend-directory":"/opt/tritonserver/backends","default-max-batch-size":"4"}}
+I0202 16:48:43.702088 1110257 tensorflow.cc:2642] TRITONBACKEND_ModelInitialize: model1 (version 1)
+2023-02-02 08:48:43.703935: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:43.793305: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:43.793679: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:43.795785: I tensorflow/core/platform/cpu_feature_guard.cc:194] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-02 08:48:53.561568: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:53.706519: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:354] MLIR V1 optimization pass is not enabled
+2023-02-02 08:48:53.727094: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:54.522647: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:54.624745: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 10920834 microseconds.
+I0202 16:48:54.678795 1110257 tensorflow.cc:2642] TRITONBACKEND_ModelInitialize: output-model (version 1)
+2023-02-02 08:48:54.679739: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/output-model/1/model.savedmodel
+2023-02-02 08:48:54.681853: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:54.681900: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/output-model/1/model.savedmodel
+2023-02-02 08:48:54.684686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:54.687124: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:54.708982: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/output-model/1/model.savedmodel
+2023-02-02 08:48:54.716117: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 36384 microseconds.
+I0202 16:48:54.718607 1110257 tensorflow.cc:2642] TRITONBACKEND_ModelInitialize: input-model (version 1)
+2023-02-02 08:48:54.719293: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/input-model/1/model.savedmodel
+2023-02-02 08:48:54.721261: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:54.721301: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/input-model/1/model.savedmodel
+2023-02-02 08:48:54.723973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:54.725960: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:54.745512: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/input-model/1/model.savedmodel
+2023-02-02 08:48:54.752221: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 32930 microseconds.
+I0202 16:48:54.754325 1110257 tensorflow.cc:2642] TRITONBACKEND_ModelInitialize: model2 (version 1)
+2023-02-02 08:48:54.755048: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:54.779059: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:54.779110: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:54.781940: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:54.835126: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:55.225933: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:55.311559: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 556512 microseconds.
+I0202 16:48:55.349120 1110257 tensorflow.cc:2691] TRITONBACKEND_ModelInstanceInitialize: model1_0_0 (GPU device 0)
+2023-02-02 08:48:55.349759: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:55.366709: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:55.366799: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:55.369512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:55.421016: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:55.968262: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:56.066807: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 717056 microseconds.
+I0202 16:48:56.067036 1110257 tensorflow.cc:2691] TRITONBACKEND_ModelInstanceInitialize: output-model (GPU device 0)
+2023-02-02 08:48:56.067461: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/output-model/1/model.savedmodel
+2023-02-02 08:48:56.068740: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:56.068782: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/output-model/1/model.savedmodel
+2023-02-02 08:48:56.071239: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:56.073151: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:56.094058: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/output-model/1/model.savedmodel
+2023-02-02 08:48:56.101100: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 33644 microseconds.
+I0202 16:48:56.101235 1110257 tensorflow.cc:2691] TRITONBACKEND_ModelInstanceInitialize: input-model (GPU device 0)
+2023-02-02 08:48:56.101685: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/input-model/1/model.savedmodel
+I0202 16:48:56.101861 1110257 model_lifecycle.cc:694] successfully loaded 'output-model' version 1
+2023-02-02 08:48:56.102825: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:56.102866: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/input-model/1/model.savedmodel
+2023-02-02 08:48:56.105255: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:56.106878: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:56.126213: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/input-model/1/model.savedmodel
+2023-02-02 08:48:56.132874: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 31193 microseconds.
+I0202 16:48:56.132978 1110257 tensorflow.cc:2691] TRITONBACKEND_ModelInstanceInitialize: model2_0_0 (GPU device 0)
+I0202 16:48:56.133328 1110257 model_lifecycle.cc:694] successfully loaded 'input-model' version 1
+2023-02-02 08:48:56.133373: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:56.146059: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:56.146110: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:56.148636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:56.187599: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:56.542344: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:56.626401: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 493049 microseconds.
+I0202 16:48:56.626621 1110257 tensorflow.cc:2691] TRITONBACKEND_ModelInstanceInitialize: model1_0_1 (GPU device 0)
+2023-02-02 08:48:56.627254: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:56.643931: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:56.644011: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:56.646677: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:56.712435: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:57.224811: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/model1/1/model.savedmodel
+2023-02-02 08:48:57.335628: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 708378 microseconds.
+I0202 16:48:57.335917 1110257 tensorflow.cc:2691] TRITONBACKEND_ModelInstanceInitialize: model2_0_1 (GPU device 0)
+I0202 16:48:57.336431 1110257 model_lifecycle.cc:694] successfully loaded 'model1' version 1
+2023-02-02 08:48:57.336963: I tensorflow/cc/saved_model/reader.cc:45] Reading SavedModel from: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:57.350793: I tensorflow/cc/saved_model/reader.cc:89] Reading meta graph with tags { serve }
+2023-02-02 08:48:57.350854: I tensorflow/cc/saved_model/reader.cc:130] Reading SavedModel debug info (if present) from: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:57.353448: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1637] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3109 MB memory:  -> device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:07:00.0, compute capability: 6.1
+2023-02-02 08:48:57.406133: I tensorflow/cc/saved_model/loader.cc:231] Restoring SavedModel bundle.
+2023-02-02 08:48:57.765779: I tensorflow/cc/saved_model/loader.cc:215] Running initialization op on SavedModel bundle at path: /home/mly/O3-replay/.testhermes/model2/1/model.savedmodel
+2023-02-02 08:48:57.849550: I tensorflow/cc/saved_model/loader.cc:325] SavedModel load for tags { serve }; Status: success: OK. Took 512593 microseconds.
+I0202 16:48:57.850145 1110257 model_lifecycle.cc:694] successfully loaded 'model2' version 1
+I0202 16:48:57.850908 1110257 model_lifecycle.cc:459] loading: ensemble:1
+I0202 16:48:57.851474 1110257 model_lifecycle.cc:694] successfully loaded 'ensemble' version 1
+I0202 16:48:57.851610 1110257 server.cc:563] 
++------------------+------+
+| Repository Agent | Path |
++------------------+------+
++------------------+------+
+
+I0202 16:48:57.851687 1110257 server.cc:590] 
++------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Backend    | Path                                                            | Config                                                                                                                                                        |
++------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| tensorflow | /opt/tritonserver/backends/tensorflow2/libtriton_tensorflow2.so | {"cmdline":{"auto-complete-config":"true","min-compute-capability":"6.000000","backend-directory":"/opt/tritonserver/backends","default-max-batch-size":"4"}} |
++------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+I0202 16:48:57.851776 1110257 server.cc:633] 
++--------------+---------+--------+
+| Model        | Version | Status |
++--------------+---------+--------+
+| ensemble     | 1       | READY  |
+| input-model  | 1       | READY  |
+| model1       | 1       | READY  |
+| model2       | 1       | READY  |
+| output-model | 1       | READY  |
++--------------+---------+--------+
+
+I0202 16:48:57.883390 1110257 metrics.cc:864] Collecting metrics for GPU 0: GeForce GTX 1050 Ti
+I0202 16:48:57.883912 1110257 metrics.cc:757] Collecting CPU metrics
+I0202 16:48:57.884171 1110257 tritonserver.cc:2264] 
++----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Option                           | Value                                                                                                                                                                                                |
++----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| server_id                        | triton                                                                                                                                                                                               |
+| server_version                   | 2.29.0                                                                                                                                                                                               |
+| server_extensions                | classification sequence model_repository model_repository(unload_dependents) schedule_policy model_configuration system_shared_memory cuda_shared_memory binary_tensor_data statistics trace logging |
+| model_repository_path[0]         | /home/mly/O3-replay/.testhermes                                                                                                                                                                      |
+| model_control_mode               | MODE_NONE                                                                                                                                                                                            |
+| strict_model_config              | 0                                                                                                                                                                                                    |
+| rate_limit                       | OFF                                                                                                                                                                                                  |
+| pinned_memory_pool_byte_size     | 268435456                                                                                                                                                                                            |
+| cuda_memory_pool_byte_size{0}    | 67108864                                                                                                                                                                                             |
+| response_cache_byte_size         | 0                                                                                                                                                                                                    |
+| min_supported_compute_capability | 6.0                                                                                                                                                                                                  |
+| strict_readiness                 | 1                                                                                                                                                                                                    |
+| exit_timeout                     | 30                                                                                                                                                                                                   |
++----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+I0202 16:48:57.893962 1110257 grpc_server.cc:4819] Started GRPCInferenceService at 0.0.0.0:8001
+I0202 16:48:57.894902 1110257 http_server.cc:3477] Started HTTPService at 0.0.0.0:8000
+I0202 16:48:57.936452 1110257 http_server.cc:184] Started Metrics Service at 0.0.0.0:8002
+W0202 16:48:58.884824 1110257 metrics.cc:621] Unable to get power usage for GPU 0. Status:Success, value:0.000000
+W0202 16:48:58.884889 1110257 metrics.cc:645] Unable to get energy consumption for GPU 0. Status:Success, value:0
+W0202 16:48:59.885295 1110257 metrics.cc:621] Unable to get power usage for GPU 0. Status:Success, value:0.000000
+W0202 16:48:59.885324 1110257 metrics.cc:645] Unable to get energy consumption for GPU 0. Status:Success, value:0
+W0202 16:49:00.885973 1110257 metrics.cc:621] Unable to get power usage for GPU 0. Status:Success, value:0.000000
+W0202 16:49:00.886001 1110257 metrics.cc:645] Unable to get energy consumption for GPU 0. Status:Success, value:0
+I0202 16:51:55.045310 1110257 server.cc:264] Waiting for in-flight requests to complete.
+I0202 16:51:55.046294 1110257 server.cc:280] Timeout 30: Found 0 model versions that have in-flight inferences
+I0202 16:51:55.048215 1110257 server.cc:295] All models are stopped, unloading models
+I0202 16:51:55.048407 1110257 server.cc:302] Timeout 30: Found 5 live models and 0 in-flight non-inference requests
+I0202 16:51:55.048953 1110257 tensorflow.cc:2729] TRITONBACKEND_ModelInstanceFinalize: delete instance state
+I0202 16:51:55.048960 1110257 tensorflow.cc:2729] TRITONBACKEND_ModelInstanceFinalize: delete instance state
+I0202 16:51:55.048977 1110257 tensorflow.cc:2729] TRITONBACKEND_ModelInstanceFinalize: delete instance state
+I0202 16:51:55.048967 1110257 tensorflow.cc:2729] TRITONBACKEND_ModelInstanceFinalize: delete instance state
+I0202 16:51:55.049964 1110257 model_lifecycle.cc:579] successfully unloaded 'ensemble' version 1
+I0202 16:51:55.050085 1110257 tensorflow.cc:2668] TRITONBACKEND_ModelFinalize: delete model state
+I0202 16:51:55.050201 1110257 tensorflow.cc:2668] TRITONBACKEND_ModelFinalize: delete model state
+I0202 16:51:55.067526 1110257 model_lifecycle.cc:579] successfully unloaded 'output-model' version 1
+I0202 16:51:55.067530 1110257 model_lifecycle.cc:579] successfully unloaded 'input-model' version 1
+I0202 16:51:55.101125 1110257 tensorflow.cc:2729] TRITONBACKEND_ModelInstanceFinalize: delete instance state
+I0202 16:51:55.101255 1110257 tensorflow.cc:2668] TRITONBACKEND_ModelFinalize: delete model state
+I0202 16:51:55.112185 1110257 tensorflow.cc:2729] TRITONBACKEND_ModelInstanceFinalize: delete instance state
+I0202 16:51:55.112325 1110257 tensorflow.cc:2668] TRITONBACKEND_ModelFinalize: delete model state
+I0202 16:51:55.145954 1110257 model_lifecycle.cc:579] successfully unloaded 'model2' version 1
+I0202 16:51:55.159913 1110257 model_lifecycle.cc:579] successfully unloaded 'model1' version 1
+I0202 16:51:56.048516 1110257 server.cc:302] Timeout 29: Found 0 live models and 0 in-flight non-inference requests

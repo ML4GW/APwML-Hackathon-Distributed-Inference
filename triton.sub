@@ -1,11 +1,11 @@
 universe = vanilla
 accounting_group = ligo.dev.o4.detchar.subtraction.deepclean
 executable = /opt/tritonserver/bin/tritonserver
-arguments = "-h"
+arguments = "--model-repository /home/mly/O3-replay/.testhermes"
+#environment = CUDA_VISIBLE_DEVICES=0,1,2,3
 
 +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/ml4gw/hermes/tritonserver:22.12"
-Requirements = HasSingularity
-# && (CUDADeviceName == "NVIDIA A30")
+Requirements = HasSingularity && (CUDACapability >= 6.5)
 transfer_executable = False
 
 request_GPUs = 1
